@@ -7,6 +7,7 @@ public class calculator{
 		do{
 			System.out.println("1.Exit\n");
 			System.out.println("2.Add Two Numbers\n");
+			System.out.println("3.Multiply Two Numbers\n");
 			System.out.println("Enter your choice\n");
 			choice = scan.next().charAt(0);
 			switch(choice){
@@ -18,6 +19,11 @@ public class calculator{
                                           res = a+b;
                                           System.out.println("Result: "+res);
                                           break;
+				case '3': System.out.println("Enter 2 numbers\n");
+					  a = scan.nextFloat();
+					  b = scan.nextFloat();
+					  res = a*b;
+					  System.out.println("Result: "+res);
 				default : System.out.println("Invalid choice!!\n");
 					  break;
 			
